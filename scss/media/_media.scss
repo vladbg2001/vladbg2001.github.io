@@ -1,0 +1,213 @@
+@media (max-width: 1023px){
+    .search{
+        margin-left: 60px;
+        input{
+            width: 120px;
+        }
+    }
+    #menu{
+        li{
+            a{
+                padding: 0 15px;
+            }
+        }
+    }
+    .news{
+        max-width: 65%;
+    }
+    .info{
+        width: auto;
+        padding-left: 10px;
+        &__director{
+            width: 190px;
+        }
+        &__abiturient{
+            width: 190px;
+        }
+        h2{
+            font-size: 20px;
+        }
+    }
+    .footer{
+        &__social{
+            display: block;
+            position: static;
+            padding: 0 15px;
+        }
+        .row{
+            padding-left: 15px;
+        }
+    }
+}
+
+@media (max-width: 774px){
+    .navbar{
+        position: absolute !important;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        left: -100%;
+        height: auto !important;
+        transition: 0.3s;
+        &_active{
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    #menu{
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+        top: 0;
+        right: 50;
+        padding: 0 0;
+        li{
+            width: 100%;
+            border:none;
+            padding-right: 0;
+            a{
+                width: 100%;
+                border:none;
+                padding-right: 0;
+                padding-left: 30px;
+            }
+        }
+        .sub-menu{
+            position: relative !important;
+            display: none;
+            li{
+                height: 35px;
+                a{
+                    font-size: 12px;
+                    padding-left: 5px;
+                    white-space: normal;
+                }
+            }
+        }
+    }
+
+    .search{
+        display: none;
+        &__navbar{
+            display: block;
+        }
+    }
+
+
+    .hamburger{
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        right: 20px;
+        width: 20px;
+        height: 12px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active{
+            z-index: 2;
+            span{
+                background-color: #000;
+                margin-bottom: -2px;
+                &:nth-child(1){
+                        transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .news{
+        max-width: 100%;
+    }
+    .info{
+        padding: 0 0;
+        display: block;
+        position: static;
+        &__director{
+            padding: 0 0;
+            width: 100%;
+            img{
+                margin-left: 15px;
+            }
+            &__name{
+                font-size: 18px;
+                margin-left: 25px;
+                position: absolute;
+            }
+        }
+        &__abiturient{
+            padding: 0 0;
+            width: 100%;
+            ul{
+                margin-left: 15px;
+            }
+        }
+        h2{
+            margin-left: 15px;
+            font-size: 25px;
+        }
+    }
+
+    .footer{
+        &__contact{
+            position: static;
+            display: block;
+            padding: 0 15px;
+        }
+        &__nav{
+            height: auto;
+        }
+        #footer__menu{
+            flex-direction: column;
+            overflow: hidden;
+            height: 100%;
+            top: 0;
+            right: 50;
+            padding: 0 0;
+            margin: 0 0;
+            li{
+                width: 100%;
+                border:none;
+                padding-right: 0;
+                a{
+                    width: 100%;
+                    border:none;
+                    padding-right: 0;
+                    padding-left: 30px;
+                }
+            }
+            .footer__sub-menu{
+                position: relative !important;
+                display: none;
+                li{
+                    a{
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .header{
+        &__name{
+            display: none;
+        }
+        &__subname{
+            display: block;
+        }
+    }
+}

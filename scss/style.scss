@@ -1,0 +1,20 @@
+$main-color:#337a61;
+$second-color:#24a277;
+*{
+    font-family: 'SegoeUI', sans-serif;
+    margin: 0 0;
+    padding: 0 0;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+@import 'block/header/top-menu';
+@import 'block/header/head';
+@import 'block/header/navbar';
+@import 'block/buttons';
+@import 'block/news';
+@import 'block/info';
+@import 'block/footer';
+
+@import 'media/media';

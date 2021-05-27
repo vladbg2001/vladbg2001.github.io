@@ -1,0 +1,113 @@
+.navbar{
+    background: #f1f1f1;
+    height: 50px;
+    max-width: auto;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    margin: 0 auto;
+    display: table;
+    li{
+        display: block;
+        float: left;
+        position: relative;
+        text-transform: uppercase;
+        a{
+            display: table;
+            padding: 0 20px;
+            height: 50px;
+            font-size: 15px;
+            text-align: left;
+            line-height: 49px;
+            color: #555;
+            text-decoration: none;
+            transition: .5s;
+        }
+        a:hover + .sub-menu{
+            display: block;
+        }
+    }
+    li:hover >ul{
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+    }
+    li:hover {    
+        a{
+            color:$second-color;
+        }
+        .sub-menu{
+            a{
+                background:#fff;
+                color: #666;
+                height: 40px;
+                line-height: 40px;
+            }
+            a:hover{
+                color:green;
+            }
+        }
+    }
+    .sub-menu{
+        padding: 0;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        box-shadow: 10px 0px 30px 0px rgba(0,0,0,0.2);
+        z-index: -1;
+        transition: .3s;
+        li{
+            float: none;
+            height: 28px;
+            a{
+                width: 100%;
+                font-style: 14px;
+                white-space: nowrap;
+                text-align: left;
+                box-shadow: none;
+                border: none;
+                text-transform: none;
+            }
+        }
+    }
+}
+// .sub-menu{
+//     visibility: hidden;
+//     opacity: 0;
+//     position: absolute;
+//     box-shadow: 10px 0px 30px 0px rgba(0,0,0,0.2);
+//     z-index: -1;
+//     transition: .3s;
+
+// }
+
+.hamburger{
+    display: none;
+}
+
+.search__navbar{
+    height: 100px;
+    background-color: #fff;
+    input{
+        margin: 35px 0 0 50px;
+        width: 120px;
+        height: 25px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        background-color: #f1f1f1;
+    }
+    .loupe{
+        width: 20px;
+        height: 20px;
+    }
+    button{
+        font-weight: 600;
+        width: 70px;
+        height: 25px;
+        border: none;
+        background-color:#ddd;
+    }
+}

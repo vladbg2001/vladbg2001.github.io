@@ -1,0 +1,132 @@
+.footer{
+    min-height: 350px;
+    background-color: #033e38;
+    &__nav{
+        height: 35px;
+        background-color:$second-color;
+    }
+    &__content{
+        padding: 20px 0 40px 0;
+    }
+    &__info{
+        display: inline-block;
+        max-width: 500px;
+        padding: 0 15px;
+    }
+    &__contact{
+        position: absolute;
+        display: inline-block;
+        max-width: 300px;
+        color:#fff;
+        
+        }
+    &__social{
+        position: relative;
+        left: 300px;
+        top:-60px;
+        max-width: 225px;
+        display:inline-block;
+        a{
+            display: inline-block !important;
+            padding-right: 10px;
+        }
+        img{
+            width: 35px;
+            height: 35px;
+            fill: #044d45;
+        }
+    }
+    h4{
+        margin: 10px 0;
+        padding: 10px 0;
+        text-transform: uppercase;
+        color:#fff;
+        font-weight: 400;
+    }
+    span{
+        color:#74a69b;
+        font-size: 12px;
+        display: block;
+        padding-bottom: 10px;
+    }
+    a{
+        color: #4f807a;
+        font-size: 12px;
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+.row{
+    margin-top: 40px;
+    color:#74a69b;
+    font-size: 16px;
+
+}
+
+#footer__menu{
+    margin: 0 auto;
+    display: table;
+    li{
+        display: block;
+        float: left;
+        position: relative;
+        a{
+            display: table;
+            padding: 0 20px;
+            height: 35px;
+            font-size: 14px;
+            text-align: left;
+            line-height: 34px;
+            color: #fff;
+            text-decoration: none;
+            transition: .5s;
+        }
+        a:hover + .footer__sub-menu{
+            display: block;
+        }
+    }
+    li:hover > ul{
+            visibility: visible;
+            opacity: 1;
+            z-index: 1;
+        }
+    li:hover{    
+        a{
+            background-color: #bf2d2d;
+        }
+        .footer__sub-menu{
+            a{
+                background:#bf2d2d;
+                color: #fff;
+                height: 35px;
+                line-height: 34px;
+            }
+            a:hover{
+                background-color: #962323;
+            }
+        }
+    }
+    .footer__sub-menu{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        box-shadow: 10px 0px 30px 0px rgba(0,0,0,0.2);
+        z-index: -1;
+        transition: .3s;
+        bottom: 120%;
+        li{
+            float: none;
+            height: 28px;
+            a{
+                width: 100%;
+                font-size: 14px;
+                line-height: 13px;
+                white-space: nowrap;
+                text-align: left;
+                box-shadow: none;
+                border: none;
+                text-transform: none;
+            }
+        }
+    }
+}

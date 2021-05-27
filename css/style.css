@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu li:hover a{
+    color:#24a277;
+}
+
+#menu li:hover .sub-menu a{
+    background:#fff;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+}
+
+#menu li:hover .sub-menu a:hover{
+    color:green;
+}
+
+#menu li a:hover + .sub-menu, .sub-menu:hover{
+    display: block;
+}
+
+#menu li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}

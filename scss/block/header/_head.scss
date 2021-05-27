@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    height: 120px;
+    position: relative;
+    &__logo{
+        display: inline-block;
+        padding: 20px 30px 20px 30px;
+    }
+    h1{
+        height: 120px;
+        width: auto;
+        display: inline-block;
+        margin-top: 45px;
+        font-weight: 600;
+        font-size: 16px;
+        color: $main-color;
+    }
+    &__subname{
+        display: none;
+    }
+}
+.search{
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 190px;
+    input{
+        width: 180px;
+        height: 25px;
+        border: none;
+    }
+    .loupe{
+        width: 20px;
+        height: 20px;
+    }
+    button{
+        cursor: pointer;
+        padding-left: 15px;
+        border: none;
+        background-color:#fff;
+    }
+    &__navbar{
+        display: none;
+    }
+}
