@@ -172,7 +172,6 @@
         #footer__menu{
             flex-direction: column;
             overflow: hidden;
-            height: 100%;
             top: 0;
             right: 50;
             padding: 0 0;
@@ -199,6 +198,21 @@
             }
         }
     }
+    .history{
+        &__img{
+            text-align:center;
+            img{
+                padding: 0 0;
+                float: none;
+            }
+        }
+        .video{
+            iframe{
+                width: 360px;
+                height: 202px;
+            }
+        }
+    }
 }
 
 @media (max-width: 425px){
@@ -208,6 +222,23 @@
         }
         &__subname{
             display: block;
+        }
+    }
+    .history{
+        &__img{
+            img{
+                width: 260px;
+                height: auto;
+            }
+        }
+        &__text{
+            font-size: 14px;
+        }
+        .video{
+            iframe{
+                width: 260px;
+                height: 146px;
+            }
         }
     }
 }
